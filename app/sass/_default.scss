@@ -4,6 +4,31 @@ body {
     color: $colorBrand01;
 }
 
+.bg_blanc {
+    background-color: $colorwhite;
+}
+
+.navbar-default {
+    .navbar-nav {
+        .active {
+            a {
+                color: #8dc649;
+                background-color: #fff;
+            }
+
+            &:focus {
+              color: #8dc649;
+              background-color: #fff;
+            }
+
+            &:hover{
+              color: #8dc649;
+              background-color: #fff;
+            }
+        }
+    }
+}
+
 .bg01 {
     background-image: url("../img/visuel_header_accueil.jpg");
 }
@@ -376,12 +401,12 @@ body {
             }
 
             .txt_detail {
-              @media (max-width:$mediaQuery3) {
-                  font-size: 16px;
-              }
-              @media (max-width:$mediaQuery2) {
-                  font-size: 14px;
-              }
+                @media (max-width:$mediaQuery3) {
+                    font-size: 16px;
+                }
+                @media (max-width:$mediaQuery2) {
+                    font-size: 14px;
+                }
             }
         }
     }
@@ -471,7 +496,6 @@ body {
                     margin-top: 28px;
                     margin-bottom: 0;
                 }
-
                 @media (max-width:$mediaQuery1) {
                     padding-left: 4px;
                 }
@@ -525,7 +549,6 @@ body {
                     margin-top: 28px;
                     margin-bottom: 0;
                 }
-
                 @media (max-width:$mediaQuery1) {
                     padding-left: 4px;
                 }
