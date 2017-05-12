@@ -1,0 +1,18 @@
+#histoire {
+    background-color: #fff;
+    margin-top: calc(100vh - 10px);
+    position: relative;
+    z-index: 1;
+
+    .p_wrapper {
+        background-color: $colorbleu;
+        color: #fff;
+        padding: 15rem 6rem;
+        margin: 0 auto;
+        max-width: 1100px;
+
+        .p_wrapper_inner {
+            font-size: 2rem;
+        }
+    }
+}

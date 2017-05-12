@@ -1,0 +1,41 @@
+#accueil {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 100%;
+    z-index: 0;
+
+    .intro_pic {
+        float: left;
+        height: 100%;
+        width: 50%;
+
+        .intro_image {
+            display: block;
+            height: 100%;
+            margin-left: auto;
+            min-height: 600px;
+            max-width: none;
+            width: auto;
+        }
+    }
+
+    .intro_info {
+        float: left;
+        height: 100%;
+        width: 50%;
+        margin: 10px auto 0 0;
+        align-items: center;
+        display: flex;
+
+        .inner-wrapper {
+            .intro_description {
+                font-size: 2.5em;
+                line-height: 1.3;
+                text-align: center;
+                width:700px;
+            }
+        }
+    }
+}
