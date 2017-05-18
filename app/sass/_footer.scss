@@ -1,94 +1,35 @@
-footer{
-
-  a,
-  a:focus,
-  a:hover{
-    color: $colorBrand02;
-    font-weight: normal;
-    font-size: 90%
-  }
-
-  ul{
-
-    list-style: none;
-
-    li{ display: inline-block;}
-    }
-
-  .footer_title{
-    padding: 20px 0 20px 0;
-    display:block;
-  }
-
-  .contacts{
-    background:$color04;
-    padding: 40px 0 40px;
-    color: $colorBrand02;
-    overflow: hidden;
-
-    img{
-      margin: 15px 0;
-
-      @media (max-width:$mediaQuery2){
-        display: block;
-        }
-    }
-
-
-    ul{
-
-      margin-left: 0;
-      -webkit-padding-start: 0px;
-      -moz-padding-start: 0px;
-      -ms-padding-start: 0px;
-
-        li a {
-        display: block;
-        background: #fff;
-        border-radius: 50%;
-        height: 35px;
-        width: 35px;
-        line-height: 35px;
-        color: $colorBrand01;
-        text-align: center;
-        font-size: 150%;
-        margin: 4px 15px;
-
-        @media (max-width:$mediaQuery3){
-          margin: 4px 2px;
-          }
-
-        @media (max-width:$mediaQueryperso2){
-          margin: 4px 8px;
-          }
-        }
-
-        li a:first-child {margin-left: 0}
-    }
-  }
-
-
-  .mentions_reglement{
-    background:"#fff";
+footer {
+    background-color: $colorwhite;
+    position: relative;
     text-align: center;
+    background-color: $grislight;
+    padding: 20px 0;
+    font-size: 16px;
 
-    ul{
-      padding: 25px 0 25px 0;
-
-      li{ display: inline-block;
-        margin: 0 35px;
-
-        a{
-          color: $colorBrand01;
-          font-size: 14px;
-
-          &:hover{
-            text-decoration: none;
-            color: $color00;
-          }
-        }
-      }
+    a,
+    a:focus,
+    a:hover {
+        color: $gristxt;
+        font-weight: normal;
     }
-  }
 
+    ul {
+        list-style: none;
+        padding-left: 0;
+
+        li {
+            display: inline-block;
+            list-style: none;
+        }
+
+        li:last-child {
+            &:before {
+                display: inline-block;
+                content: "|";
+                margin: 0 5px 0 0;
+                font-size: 11px;
+                color: $gristxt;
+            }
+        }
+    }
 }

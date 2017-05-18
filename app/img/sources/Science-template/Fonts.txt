@@ -1,0 +1,5 @@
+Fonts used in this design;
+
+Font: Autour One,
+Author: Sorkin Type Co,
+Url: http://www.fontsquirrel.com/fonts/autour-one;

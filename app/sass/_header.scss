@@ -8,12 +8,29 @@ nav {
             width: 208px;
             height: 51.6406px;
             transition: all 300ms ease-out 0s;
-            margin: 16px 0 0 10px;
+            margin: 26px 0 0 20px;
+            @media (max-width:$mediaQuery2) {
+                margin: 4px 0 0 10px;
+                width: 160px;
+            }
         }
     }
 
-    .navbar-ex1-collapse{
-      float: right;
+    .navbar-ex1-collapse {
+        float: right;
+        @media (max-width:$mediaQuery2) {
+            float: inherit;
+        }
+
+        ul {
+            li {
+                a {
+                    @media (max-width:$mediaQuery3) {
+                        font-size: 11px;
+                    }
+                }
+            }
+        }
     }
 }
 

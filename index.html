@@ -25,11 +25,10 @@
 
 </head>
 
-<body>
+<body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
 
-
+    <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
-
         <div class="logo_img">
             <!--  DETECT IE OLD -->
             <script type="text/javascript">
@@ -66,19 +65,19 @@
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#accueil">Accueil</a>
+                    <a class="page-scroll" href="#page-top">Accueil</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#histoire">Notre histoire</a>
+                    <a class="page-scroll" href="#histoire">histoire</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#expert">EXPERTISE COSMÉTIQUE</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#engagements">SERVICES</a>
+                    <a class="page-scroll" href="#service">SERVICES</a>
                 </li>
                 <li>
-                    <a class="page-scroll" href="#actualites">PRODUITS</a>
+                    <a class="page-scroll" href="#produit">PRODUITS</a>
                 </li>
                 <li>
                     <a class="page-scroll" href="#contact">Contact</a>
@@ -97,17 +96,21 @@
 
 
     <!-- BLOC H1 -->
-    <!-- <div class="h1_bloc"></div> -->
+    <div class="h1_bloc"></div>
 
     <section id="accueil" class="content-section">
         <div class="intro_pic">
-            <img src="http://morebybourn.com/images/love-more/intro-image.jpg" class="intro_image" alt="Intro image ruynesse">
+            <img src="./app/img/intro-image.jpg" class="intro_image" alt="Intro image ruynesse">
         </div>
         <div class="intro_info">
             <div class="inner-wrapper">
                 <h1 style="display: none;">Ruynesse</h1>
+                <div class="logo">
+                    <img src="./app/img/logo_header.svg" />
+                </div>
                 <p class="intro_description">Laboratoire de notre cosmétiques, authentiquement suisse, 100% végétales hautement efficaces</p>
-                <a href="#" class="c-button c-intro__button">The Love More Collection</a>
+                <a href="#histoire" class="page-scroll btn_plus">
+                    <i class="fa fa-angle-down fa-6" aria-hidden="true"></i></a>
             </div>
         </div>
     </section>
@@ -115,9 +118,8 @@
     <section id="histoire" class="content-section">
         <div class="container p_histoire bg_blanc">
             <div class="p_histoire_inner">
-              <h2>Qui sommes nous</h2>
-                Ruynèsse laboratoires provient de l'expérience d'une équipe de pharmaciens, biochimistes et médecins qui ont développées
-                et fourni des solutions et des formules de pointe pour les entreprises internationales les plus connues dans l'industrie cosmétique.
+                <h2>Qui sommes nous</h2> Ruynèsse laboratoires provient de l'expérience d'une équipe de pharmaciens, biochimistes et médecins qui ont développées et fourni des solutions et des formules de pointe pour les entreprises internationales les plus connues dans l'industrie
+                cosmétique.
                 <br/> Les experts en thérapies combinées antivieillissement. Équipements d’administration transdermique.
                 <br /> Nous nous soucions de la beauté autant que de la qualité. Ruynèsse laboratoires est une biotechnologie nouvelle d'obtention de cellules souches végétales qui fait l'objet d'une demande de brevet et ouvre de toutes nouvelles perspectives
                 dans le domaine de la cosmétique.<br /> A partir de cette même technologie, d'autres substances actives 100% végétales hautement efficaces et éthiquement correctes ont été développées et le seront à l’avenir.
@@ -131,9 +133,43 @@
     <section id="expert" class="content-section">
         <div class="container p_expert bg_blanc">
             <div class="col-md-12">
-                <h1>Notre portefeuille tertiaire</h1>
-                <h2>Présentation</h2>
-                <br><br clear="all">
+                <h1>EXPERTISE COSMÉTIQUE</h1>
+                <h3>Partenaire de vos projets cosmétiques soins, notre expertise repose sur quatre piliers,
+                  véritable base de notre philosophie de travail.</h3>
+                <br clear="all"><br>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
+                        <a href="#" class="inner_picto">
+                            <i class="fa fa-flask"></i>
+                        </a>
+                        <div class="wow slideInLeft titre_expert">Science</div>
+                        <p>Une connaissance approfondie des matières premières et des actifs, des processus et secrets de fabrication, nos produits répondent aux exigences les plus pointues de nos clients et des législations pour proposer des formules de
+                            haute technicité alliant sensorialité et efficacité.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
+                        <a href="#" class="inner_picto">
+                            <i class="fa fa-users"></i>
+                        </a>
+                        <div class="wow slideInRight titre_expert delay01">Marketing</div>
+                        <p>À l’écoute du marché et de vos attentes, anticiper l’évolution rapide des grands courants cosmétiques nous permet d’élaborer vos produits de demain.</p>
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
+                        <a href="#" class="inner_picto">
+                            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                        </a>
+                        <div class="wow slideInLeft titre_expert delay02">Technicité</div>
+                        <p>Parce que chaque produit est unique, notre savoir-faire R&D et notre outil industriel s’adaptent à chacun de vos développements dans le respect de vos cahiers des charges.</p>
+                    </div>
+                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
+                        <a href="#" class="inner_picto">
+                            <i class="fa fa-trophy"></i>
+                        </a>
+                        <div class="wow slideInRight titre_expert delay03">Excellence</div>
+                        <p>Ruynèsse laboratoires vous garantit la maîtrise de vos projets sous tous ses aspects.</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
@@ -141,79 +177,82 @@
 
 
 
-    <section id="engagements" class="content-section">
-        <div class="container bg_blanc engagements">
+    <section id="service" class="content-section">
+        <div class="container bg_blanc p_service">
             <div class="col-md-12">
-                <h1>Nos engagements</h1>
+                <h1>SERVICES</h1>
 
-                <h2>Fiscalité</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis
-                    aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="row inner_content">
+                    <div class="col-lg-8 col-md-8 col-sm-12 inner_service_left">
+                        <img src="./app/img/visu_service.jpg" alt="">
+                    </div>
 
+                    <div class="col-lg-4 col-md-4 col-sm-12 inner_service_right">
+                        <div class="item_service">
+                            <h4 class="titre_item wow flipInX">FORMULATION</h4>
+                            <p>Nous proposons une offre complète pour vos projets les plus ambitieux. Nous vous accompagnons depuis la formulation jusqu’à la livraison de vos produits cosmétiques « Swiss made », en adéquation avec les tendances du marché
+                                et vos besoins.</p>
+                        </div>
+
+                        <div class="item_service">
+                            <h4 class="titre_item wow flipInX delay01">FABRICATION</h4>
+                            <p>Nous disposons des équipements requis pour assurer le passage du laboratoire à l’atelier de fabrication, étape critique du processus de production.</p>
+                        </div>
+
+                        <div class="item_service">
+                            <h4 class="titre_item wow flipInX delay02">CONDITIONNEMENT</h4>
+                            <p>Nos lignes de conditionnement polyvalentes et flexibles permettent le remplissage d’airless, pots, flacons et tubes. Nous réalisons la mise en étuis, l’étiquettage et le cellophanage.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <section id="produit" class="content-section">
+        <div class="container bg_blanc p_produit">
+            <div class="col-md-12">
+                <h1>LES PRODUITS</h1>
                 <br clear="all"><br>
 
-                <div class="col-md-4 ">
-                    <div class="chiffre couleur01 wow bounceInUp">01 %</div>
-                    <span class="titre01">Titre</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="chiffre couleur02 wow bounceInUp delay01">02 %</div>
-                    <span class="titre01">Titre</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
-                </div>
-                <div class="col-md-4 ">
-                    <div class="chiffre couleur03 wow bounceInUp delay02">03 %</div>
-                    <span class="titre01">Titre</span>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.
-                        Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <div class="row">
+                    <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
+                        <div class="pic_produit">
+                            <img src="./app/img/masque.jpg" />
+                        </div>
+                        <div class="wow fadeInDown titre_expert">Masque</div>
+                        <p>Une connaissance approfondie des matières premières et des actifs, des processus et secrets de fabrication, nos produits répondent aux exigences les</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
+                        <div class="pic_produit">
+                            <img src="./app/img/serum.jpg" />
+                        </div>
+                        <div class="wow fadeInDown titre_expert delay01">Sérum</div>
+                        <p>À l’écoute du marché et de vos attentes, anticiper l’évolution rapide des grands courants cosmétiques nous permet d’élaborer vos produits de demain.</p>
+                    </div>
+                    <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
+                        <div class="pic_produit">
+                            <img src="./app/img/soin.jpg" />
+                        </div>
+                        <div class="wow fadeInDown titre_expert delay01">Soin</div>
+                        <p>À l’écoute du marché et de vos attentes, anticiper l’évolution rapide des grands courants cosmétiques nous permet d’élaborer vos produits de demain.</p>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
-
-
-
-
-
-    <section id="actualites" class="content-section">
-        <div class="container bg_blanc">
-            <div class="col-md-12">
-                <h1>Notre actualité</h1>
-                <br clear="all"><br>
-                <a href="#" class="actu_bloc">
-                    <span class="actu_date">1 février, 2016 - 11:53</span><br>
-                    <span class="actu_titre">Ipsum dolor sit amet lorem</span><br>
-                    <span class="actu_texte">ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </a>
-                <a href="#" class="actu_bloc">
-                    <span class="actu_date">1 février, 2016 - 11:53</span><br>
-                    <span class="actu_titre">Ipsum dolor sit amet lorem</span><br>
-                    <span class="actu_texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </a>
-                <a href="#" class="actu_bloc">
-                    <span class="actu_date">1 février, 2016 - 11:53</span><br>
-                    <span class="actu_titre">Ipsum dolor sit amet lorem</span><br>
-                    <span class="actu_texte">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris laboris nisi ut aliquip ex ea commodo consequat.</span>
-                </a>
-
-                <a href="#" class="bouton_fleche"><span>bouton</span></a>
-            </div>
-        </div>
-    </section>
-
-
-
 
 
     <!-- CONTACTS -->
-    <section id="contact" class="bicolor">
+    <section id="contact">
         <div class="container">
-            <!-- BLOC GRIS -->
-            <!-- <div class="col-lg-8 col-md-8 col-sm-8 bg_gris2">
-                <h1>Contact</h1>
+            <h1>Contact</h1>
+            <!-- BLOC form -->
+            <div class="col-lg-8 col-md-8 col-sm-8">
                 <br clear="all">
 
                 <form class="form">
@@ -236,7 +275,7 @@
 
                     <div class="form-group col-lg-6 col-md-6 col-sm-6">
                         <label for="email">E-mail</label>
-                        <input type="text" class="form-control" id="email" placeholder="jean.dupond@example.com">
+                        <input type="text" class="form-control" id="email" placeholder="">
                     </div>
 
 
@@ -250,25 +289,25 @@
                     <br><br clear="all">
 
                     <div class="text-center">
-                        <button type="submit" class="btn btn-default">Send invitation</button>
+                        <button type="submit" class="btn btn-default">Envoyer</button>
                     </div>
                 </form>
-            </div> -->
+            </div>
 
-            <!-- BLOC ROSE -->
-            <div class="col-lg-4 col-md-4 col-sm-4 bg_rose">
-                <p class="telephone">APPELEZ-NOUS<br>01 01 01 01 01<br>de 9h00 à 18h00 du lundi au vendredi</p>
+            <!-- BLOC INFOS CONTACT -->
+            <div class="col-lg-4 col-md-4 col-sm-4 bloc_infos">
+                <p class="infos_contact"><strong>Ruynèsse laboratoires SUISSE</strong><br /> Birkenstrasse 45, 6343 Rotkreuz
+                    <br /> +41 21 925 55 70</p>
+                <a href="mailto:contact@ruynesse.com">contact@ruynesse.com</a>
             </div>
         </div>
     </section>
 
-    <footer id="footer" class="fd03">
-        <div class="container">
+    <footer id="footer">
+        <div class="container footer_p">
             <ul>
-                <li><a href="#">BNP Paribas Real Estate</a></li>
                 <li><a href="#">Mentions légales</a></li>
-                <li><a href="#">Politique cookies</a></li>
-                <li>© BNP Paribas Real-Estate - 2016</li>
+                <li>© Ruynèsse - 2017</li>
             </ul>
         </div>
     </footer>

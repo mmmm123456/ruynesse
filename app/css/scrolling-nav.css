@@ -36,8 +36,8 @@ html {
 
     .top-nav-collapse .logo_img,
     .top-nav-collapse .collapse.navbar-collapse.navbar-ex1-collapse .nav.navbar-nav li{padding: 3px 0}
-    .nav.navbar-nav li:last-child{ background: #ea008b; color: #fff }
-    .nav.navbar-nav li:last-child a{ color: #fff }
+    /*.nav.navbar-nav li:last-child{ background: #ea008b; color: #fff }
+    .nav.navbar-nav li:last-child a{ color: #fff }*/
 }
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.

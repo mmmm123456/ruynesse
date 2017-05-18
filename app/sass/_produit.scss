@@ -1,0 +1,46 @@
+#produit {
+    background-color: #fff;
+    position: relative;
+    height: 100vh;
+    width: 100%;
+    padding-top: 100px;
+    @media (max-width:$mediaQuery3) {
+      padding-top: 0;
+      height: auto;
+    }
+
+    .p_produit {
+        text-align: center;
+
+        h1 {
+            margin-bottom: 40px;
+        }
+
+        .produit_inner {
+            text-align: center;
+
+            .pic_produit {
+                width: 100%;
+
+                img {
+                    width: 80%;
+                    height: auto;
+                }
+            }
+
+            .titre_expert {
+                font-weight: 700;
+                font-size: 20px;
+                margin-top: 20px;
+                text-transform: uppercase;
+            }
+
+            p {
+                text-align: left;
+                margin-top: 20px;
+                font-size: 16px;
+                line-height: 1.6;
+            }
+        }
+    }
+}
