@@ -16,9 +16,9 @@
 
         h3 {
             text-align: center;
-            padding: 2rem 10rem 3rem;
+            padding: 20px 80px 30px;
             @media (max-width:$mediaQuery2) {
-                padding: 2rem 0 3rem;
+                padding: 20px 0 30px;
             }
         }
 
@@ -30,7 +30,7 @@
             }
 
             .titre_expert {
-                font-size: 2rem;
+                font-size: 20px;
                 text-transform: uppercase;
                 font-weight: 700;
             }
