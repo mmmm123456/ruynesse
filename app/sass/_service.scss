@@ -39,12 +39,11 @@
                     float: right;
 
                     .square {
-                        height: 200px;
-                        width: 200px;
+                        height: 250px;
+                        width: 250px;
                         display: flex;
                         justify-content: center;
                         align-items: center;
-                        background-color: $colorbleu;
 
                         i {
                             color: #fff;
@@ -52,22 +51,19 @@
                         }
                     }
 
-                    .bloc2 {
-                        // background: url("../img/visu_service1.jpg") center center no-repeat;
-                        // background-size: cover;
-                        background-color: #fff;
+                    .bloc1 {
+                        background: url("../img/visu_service1.jpg") center center no-repeat;
+                        background-size: cover;
                     }
 
-                    .bloc3 {
-                        // background: url("../img/visu_service2.jpg") center center no-repeat;
-                        // background-size: cover;
-                        background-color: #fff;
+                    .bloc4 {
+                        background: url("../img/visu_service2.jpg") center center no-repeat;
+                        background-size: cover;
                     }
 
-                    .bloc6 {
-                        // background: url("../img/visu_service3.jpg") center center no-repeat;
-                        // background-size: cover;
-                        background-color: #fff;
+                    .bloc5 {
+                        background: url("../img/visu_service3.jpg") center center no-repeat;
+                        background-size: cover;
                     }
                 }
 
