@@ -17,28 +17,38 @@ html {
 @media(min-width:767px) {
     .navbar {
         /*padding: 20px 0;*/
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out;
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out;
+    }
+
+    .navbar-default {
+        background-color: #fff;
+        border-color: #fff;
     }
 
     .top-nav-collapse {
         padding: 0;
+        background-color: #f8f8f8;
+        border-color: #e7e7e7;
     }
 
-    .logo_img{}
-    .collapse.navbar-collapse.navbar-ex1-collapse .nav.navbar-nav li{
-        -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
-        transition: background .5s ease-in-out,padding .5s ease-in-out}
-
-    .collapse.navbar-collapse.navbar-ex1-collapse .nav.navbar-nav li{ padding: 20px 0;border-left: 1px solid #ccc}
-
-    .top-nav-collapse .logo_img,
-    .top-nav-collapse .collapse.navbar-collapse.navbar-ex1-collapse .nav.navbar-nav li{padding: 3px 0}
+    .logo_img {}
+    .collapse.navbar-collapse.navbar-ex1-collapse .nav.navbar-nav li {
+        -webkit-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        -moz-transition: background .5s ease-in-out, padding .5s ease-in-out;
+        transition: background .5s ease-in-out, padding .5s ease-in-out
+    }
+    .collapse.navbar-collapse.navbar-ex1-collapse .nav.navbar-nav li {
+        padding: 20px 0;
+    }
+    .top-nav-collapse .logo_img, .top-nav-collapse .collapse.navbar-collapse.navbar-ex1-collapse .nav.navbar-nav li {
+        padding: 3px 0
+    }
     /*.nav.navbar-nav li:last-child{ background: #ea008b; color: #fff }
     .nav.navbar-nav li:last-child a{ color: #fff }*/
 }
+
 
 /* Demo Sections - You can use these as guides or delete them - the scroller will work with any sort of height, fixed, undefined, or percentage based.
 The padding is very important to make sure the scrollspy picks up the right area when scrolled to. Adjust the margin and padding of sections and children

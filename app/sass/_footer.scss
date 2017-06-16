@@ -1,15 +1,14 @@
 footer {
-    background-color: $colorwhite;
     position: relative;
     text-align: center;
-    background-color: $grislight;
+    background-color: $colorbleu3;
     padding: 20px 0;
     font-size: 16px;
 
     a,
     a:focus,
     a:hover {
-        color: $gristxt;
+        color: #fff;
         font-weight: normal;
     }
 
@@ -28,7 +27,7 @@ footer {
                 content: "|";
                 margin: 0 5px 0 0;
                 font-size: 11px;
-                color: $gristxt;
+                color: #fff;
             }
         }
     }

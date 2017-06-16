@@ -2,19 +2,20 @@
     position: fixed;
     top: 0;
     left: 0;
-    height: 100%;
+    height: 100vh;
     width: 100%;
-    z-index: 0;
-    @media (max-width:$mediaQuery2) {
-        position: static;
+    background: url('../img/intro-image.jpg') center center no-repeat;
+    background-size: cover;
+    @media (max-width:$mediaQuery3) {
+        position: relative;
         height: auto;
+        width: 100%;
     }
 
     .intro_pic {
-        float: left;
-        height: 100%;
-        width: 50%;
-        @media (max-width:$mediaQuery2) {
+        display: none;
+        @media (max-width:$mediaQuery3) {
+            display: block;
             float: none;
             height: auto;
             width: 100%;
@@ -27,7 +28,7 @@
             min-height: 600px;
             max-width: none;
             width: auto;
-            @media (max-width:$mediaQuery2) {
+            @media (max-width:$mediaQuery3) {
                 margin: 0 auto;
                 height: auto;
                 min-height: initial;
@@ -37,31 +38,30 @@
     }
 
     .intro_info {
-        float: left;
         height: 100%;
-        width: 50%;
-        margin: 10px auto 0 0;
+        float: right;
         align-items: center;
         display: flex;
-        @media (max-width:$mediaQuery2) {
+        width: 50%;
+        background-color: $colorbleu;
+        opacity: 0.6;
+        @media (max-width:$mediaQuery3) {
             float: none;
             height: auto;
             width: 100%;
-            padding-top: 50px;
             padding-bottom: 50px;
-            background-color: $grislight;
             margin: 0 auto;
             display: block;
         }
 
         .inner-wrapper {
             text-align: center;
-
             .logo {
-                width: 50rem;
+                width: 30vw;
                 margin: 0 auto;
-                @media (max-width:$mediaQuery2) {
+                @media (max-width:$mediaQuery3) {
                     width: 80%;
+                    padding-top: 100px;
                 }
 
                 img {
@@ -77,13 +77,14 @@
                 text-align: center;
                 width: 80%;
                 margin: 0 auto;
-                @media (max-width:$mediaQuery2) {
+                color: #fff;
+                @media (max-width:$mediaQuery3) {
                     width: 100%;
                 }
             }
 
             .btn_plus {
-                color: $colorgris;
+                color: #fff;
 
                 i {
                     font-size: 5rem;

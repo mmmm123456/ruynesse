@@ -1,9 +1,10 @@
 #contact {
-    background-color: #fff;
+    background-color: $grislight;
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
-    padding-top: 100px;
+    padding: 50px 0;
+    font-weight: 100;
     @media (max-width:$mediaQuery2) {
         height: auto;
         padding-top: 0;
@@ -12,13 +13,22 @@
     h1 {
         text-align: center;
         text-transform: uppercase;
+        font-weight: 100;
     }
 
     form {
         .form-group {
             label {
                 color: $gristxt;
-                font-weight: normal;
+                font-weight: 100;
+            }
+        }
+
+        .text-center {
+            color: #fff;
+
+            button {
+                font-weight: 100;
             }
         }
     }
@@ -30,6 +40,10 @@
         @media (max-width:$mediaQuery2) {
             font-size: 16px;
             text-align: center;
+        }
+
+        a {
+            color: $colorbleu3;
         }
     }
 }

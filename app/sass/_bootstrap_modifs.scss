@@ -34,6 +34,7 @@
 
 .navbar-fixed-bottom .navbar-collapse, .navbar-fixed-top .navbar-collapse {
     height: auto;
+    max-height: none;
 }
 
 .navbar-default .navbar-nav > li:hover {

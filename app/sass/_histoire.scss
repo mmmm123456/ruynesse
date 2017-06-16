@@ -1,30 +1,72 @@
 #histoire {
-    margin-top: calc(100vh - 10px);
+    margin-top: calc(100vh);
     position: relative;
     width: 100%;
     height: 100vh;
-    z-index: 1;
-    padding-top: 160px;
-    background: #fff;
-    @media (max-width:$mediaQuery2) {
-        margin-top: 0;
-        display: block;
-        padding-top: 0;
+    background: url('../img/histoire-image.jpg') center center no-repeat;
+    background-size: cover;
+    display: flex;
+    @media (max-width:$mediaQuery3) {
         height: auto;
+        padding-top: 0;
+        margin-top: 0;
     }
 
     .p_histoire {
-        background-color: $colorbleu;
-        color: #fff;
-        padding: 150px 60px;
-        @media (max-width:$mediaQuery2) {
+        color: $gristxt;
+        width: 80%;
+        height: 100%;
+        margin: 0 auto;
+        top: 0;
+        display: flex;
+        justify-content: center;
+        @media (max-width:$mediaQuery3) {
             padding: 30px 20px;
+            width: 100%;
+            display: block;
         }
 
-        .p_histoire_inner {
+        .histoire_inner1 {
+            color: #fff;
+            background-color: $colorbleu;
+            align-self: center;
+            width: 30%;
+            float: left;
+            height: 50%;
+            display: flex;
+            @media (max-width:$mediaQuery3) {
+                width: 100%;
+            }
+
+            h2 {
+                text-transform: uppercase;
+                font-weight: 100;
+                text-align: center;
+                margin-bottom: 30px;
+                letter-spacing: 2px;
+                width: 100%;
+                align-self: center;
+                align-items: center;
+                @media (max-width:$mediaQuery3) {
+                    margin-bottom: 0;
+                }
+            }
+        }
+
+        .histoire_inner2 {
+            width: 70%;
+            float: left;
+            display: flex;
+            align-self: center;
+            align-items: center;
+            padding: 60px;
             font-size: 20px;
-            @media (max-width:$mediaQuery2) {
+            height: 50%;
+            background-color: #fff;
+            opacity: 0.8;
+            @media (max-width:$mediaQuery3) {
                 font-size: 16px;
+                width: 100%;
             }
         }
     }

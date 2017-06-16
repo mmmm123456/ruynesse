@@ -1,76 +1,218 @@
 #expert {
     background-color: #fff;
     position: relative;
-    height: 100vh;
+    height: auto;
     width: 100%;
-    padding-top: 100px;
+    display: flex;
+    align-items: center;
     @media (max-width:$mediaQuery2) {
         height: auto;
         padding-top: 0;
     }
 
     .p_expert {
+        font-weight: 100;
+        width: 80%;
+        display: flex;
+        padding-top: 100px;
+        margin: 0 auto;
+        @media (max-width:$mediaQuery3) {
+            padding-top: 0;
+            width: 100%;
+        }
+
+        h1 {
+            font-weight: 100;
+        }
+
+        .inner_intro {
+            background-color: $grislight;
+            height: 520px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 0;
+            position: absolute;
+            display: flex;
+            align-items: center;
+            @media (max-width:$mediaQuery3) {
+                display: none;
+            }
+
+            h3 {
+                text-align: left;
+                padding: 30px;
+                line-height: 1.6;
+                font-weight: 100;
+                @media (max-width:$mediaQuery3) {
+                    padding: 20px;
+                    display: none;
+                }
+            }
+        }
+
+        .inner_s1,
+        .inner_s2 {
+            background-color: $grislight;
+            height: 120px;
+            width: 100%;
+            top: 0;
+            left: 0;
+            padding: 0;
+            margin: 0;
+            font-size: 20px;
+            text-transform: uppercase;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            @media (max-width:$mediaQuery3) {
+                display: none;
+            }
+        }
+
+        .inner_s2 {
+            margin-top: 20px;
+        }
+
+        .inner_long {
+            background-color: black;
+            height: 260px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            @media (max-width:$mediaQuery3) {
+                display: none;
+            }
+        }
+
+        .visu_normal {
+            background: url('../img/visu_normal.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .visu_long1 {
+            background: url('../img/visu_long1.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .visu_long2 {
+            background: url('../img/visu_long2.jpg') center center no-repeat;
+            background-size: cover;
+        }
+
+        .inner_normal {
+            height: 260px;
+            position: absolute;
+            width: 100%;
+            top: 0;
+            left: 0;
+            @media (max-width:$mediaQuery3) {
+                display: none;
+            }
+        }
+
         h1 {
             text-align: center;
         }
 
-        h3 {
-            text-align: center;
-            padding: 20px 80px 30px;
-            @media (max-width:$mediaQuery2) {
-                padding: 20px 0 30px;
-            }
+        .expert_color1 {
+            background-color: $colorbleu3;
+        }
+
+        .expert_color2 {
+            background-color: $colorbleu;
         }
 
         .expert_inner {
             text-align: center;
             padding: 20px 40px;
+            min-height: 260px;
+            align-content: center;
+            display: block;
+            z-index: 6;
+            -moz-perspective: 1000px;
+            -webkit-perspective: 1000px;
+            perspective: 1000px;
             @media (max-width:$mediaQuery2) {
                 padding: 10px 20px;
             }
 
-            .titre_expert {
+            .titre_expert_out {
+                display: flex;
+                align-items: center;
+                flex-direction: column;
+                justify-content: center;
+                color: $colorwhite;
                 font-size: 20px;
                 text-transform: uppercase;
-                font-weight: 700;
+                font-weight: 100;
+                -webkit-transition: 0.6s;
+                -webkit-transform-style: preserve-3d;
+                position: absolute;
+                height: 100%;
+                width: 100%;
+                top: 0;
+                left: 0;
+                line-height: 4;
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
             }
 
-            p {
+            .titre_expert_over {
+                display: flex;
+                align-items: center;
+                padding: 30px;
+                color: $colorwhite;
                 text-align: left;
-                font-size: 16px;
+                font-size: 20px;
                 text-align: justify;
-                margin-top: 10px;
+                -webkit-transition: 0.6s;
+                -webkit-transform-style: preserve-3d;
+                position: absolute;
+                top: 0;
+                left: 0;
+                height: 100%;
+                width: 100%;
+                background-color: $grislight2;
+                -moz-transform: rotateY(-180deg);
+                -ms-transform: rotateY(-180deg);
+                -webkit-transform: rotateY(-180deg);
+                transform: rotateY(-180deg);
+                -moz-backface-visibility: hidden;
+                -webkit-backface-visibility: hidden;
+                backface-visibility: hidden;
             }
 
             a {
-                display: inline-block;
+                display: flex;
+                justify-content: center;
                 width: 114px;
                 height: 114px;
-                margin-bottom: 25px;
                 border-radius: 50%;
                 -webkit-border-radius: 50%;
                 -moz-border-radius: 50%;
                 -o-border-radius: 50%;
-                border: 1px solid $colorbleu;
+                border: 1px solid $colorwhite;
                 text-decoration: none;
                 -webkit-transition: all 1.6s ease 0s;
                 transition: all 1.6s ease 0s;
-
-                &:hover {
-                    background: $colorbleu;
-
-                    i {
-                        color: $colorwhite;
-                        transform: rotate(360deg);
-                        -webkit-transform: rotate(360deg);
-                        -moz-transform: rotate(360deg);
-                        -o-transform: rotate(360deg);
-                        -ms-transform: rotate(360deg);
-                    }
-                }
-
+                // &:hover {
+                //     background: $colorwhite;
+                //
+                //     i {
+                //         color: $colorwhite;
+                //         transform: rotate(360deg);
+                //         -webkit-transform: rotate(360deg);
+                //         -moz-transform: rotate(360deg);
+                //         -o-transform: rotate(360deg);
+                //         -ms-transform: rotate(360deg);
+                //     }
+                // }
                 i {
-                    color: $colorbleu;
+                    color: $colorwhite;
                     font-size: 40px;
                     line-height: 114px;
                     transition: all 0.17s ease-in-out;
@@ -79,6 +221,35 @@
                     -o-transition: all 0.17s ease-in-out;
                 }
             }
+        }
+
+        .expert_inner:hover {
+            .titre_expert_out {
+                -moz-transform: rotateY(180deg);
+                -ms-transform: rotateY(180deg);
+                -webkit-transform: rotateY(180deg);
+                transform: rotateY(180deg);
+            }
+
+            .titre_expert_over {
+                -moz-transform: rotateY(0deg);
+                -ms-transform: rotateY(0deg);
+                -webkit-transform: rotateY(0deg);
+                transform: rotateY(0deg);
+            }
+        }
+    }
+
+    .section_s_display {
+        display: block;
+        @media (min-width:$mediaQuery3) {
+            display: none;
+        }
+    }
+
+    .section_l_display {
+        @media (max-width:$mediaQuery3) {
+            display: none;
         }
     }
 }

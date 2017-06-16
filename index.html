@@ -16,6 +16,7 @@
     <link rel="stylesheet" href="app/css/scrolling-nav.css">
     <link rel="stylesheet" href="app/css/main.css">
 
+
     <!-- HTML5 shim and Respond.js for IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
     <!--[if lt IE 9]>
@@ -26,7 +27,6 @@
 </head>
 
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top">
-
     <!-- Navigation -->
     <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="logo_img">
@@ -47,7 +47,6 @@
             </script>
         </div>
 
-
         <div class="navbar-header page-scroll">
             <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-ex1-collapse">
                   <span class="sr-only">Toggle navigation</span>
@@ -64,257 +63,371 @@
                 <li class="hidden">
                     <a class="page-scroll" href="#page-top"></a>
                 </li>
-                <li>
+                <li data-menuanchor="page-top">
                     <a class="page-scroll" href="#page-top">Accueil</a>
                 </li>
-                <li>
+                <li data-menuanchor="histoire">
                     <a class="page-scroll" href="#histoire">histoire</a>
                 </li>
-                <li>
+                <li data-menuanchor="expert">
                     <a class="page-scroll" href="#expert">EXPERTISE COSMÉTIQUE</a>
                 </li>
-                <li>
+                <li data-menuanchor="service">
                     <a class="page-scroll" href="#service">SERVICES</a>
                 </li>
-                <li>
+                <li data-menuanchor="produit">
                     <a class="page-scroll" href="#produit">PRODUITS</a>
                 </li>
-                <li>
+                <li data-menuanchor="contact">
                     <a class="page-scroll" href="#contact">Contact</a>
                 </li>
             </ul>
         </div>
-
         <!-- /.navbar-collapse -->
     </nav>
 
-
     <!-- RETOUR HAUT DE PAGE -->
     <a href="#page-top" class="back_top page-scroll">&nbsp;</a>
-
-
-
-
     <!-- BLOC H1 -->
     <div class="h1_bloc"></div>
 
-    <section id="accueil" class="content-section">
-        <div class="intro_pic">
-            <img src="./app/img/intro-image.jpg" class="intro_image" alt="Intro image ruynesse">
-        </div>
-        <div class="intro_info">
-            <div class="inner-wrapper">
-                <h1 style="display: none;">Ruynesse</h1>
-                <div class="logo">
-                    <img src="./app/img/logo_header.svg" />
-                </div>
-                <p class="intro_description">Laboratoire de notre cosmétiques, authentiquement suisse, 100% végétales hautement efficaces</p>
-                <a href="#histoire" class="page-scroll btn_plus">
-                    <i class="fa fa-angle-down fa-6" aria-hidden="true"></i></a>
-            </div>
-        </div>
-    </section>
-
-    <section id="histoire" class="content-section">
-        <div class="container p_histoire bg_blanc">
-            <div class="p_histoire_inner">
-                <h2>Qui sommes nous</h2>Ruynèsse laboratoires provient de l'expérience d'une équipe de pharmaciens, biochimistes et médecins qui ont développées et fourni des solutions et des formules de pointe pour les entreprises internationales les plus connues dans l'industrie
-                cosmétique.
-                <br />
-                <br/> Les experts en thérapies combinées antivieillissement. Équipements d’administration transdermique.<br />
-                <br /> Nous nous soucions de la beauté autant que de la qualité. Ruynèsse laboratoires est une biotechnologie nouvelle d'obtention de cellules souches végétales qui fait l'objet d'une demande de brevet et ouvre de toutes nouvelles perspectives
-                dans le domaine de la cosmétique.<br /><br /> A partir de cette même technologie, d'autres substances actives 100% végétales hautement efficaces et éthiquement correctes ont été développées et le seront à l’avenir.
-            </div>
-        </div>
-    </section>
-
-
-
-
-    <section id="expert" class="content-section">
-        <div class="container p_expert bg_blanc">
-            <div class="col-md-12">
-                <h1>EXPERTISE COSMÉTIQUE</h1>
-                <h3>Ruynèsse laboratoires est votre partenaire idéal pour la formulation, la conception, la fabrication et
-le conditionnement de votre propre marque de cosmétique.</h3>
-                <br clear="all"><br>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
-                        <a href="#" class="inner_picto">
-                            <i class="fa fa-flask"></i>
-                        </a>
-                        <div class="wow slideInLeft titre_expert">Science</div>
-                        <p>La connaissance des actifs et des matières premières, recettes de fabrication, les produits répondent les plus pointues de votre projet et des lois pour proposer des recettes de haute qualite alliant sensorialité et efficacité.</p>
+    <div id="fullpage">
+        <section id="accueil" class="content-section section" id="section0">
+            <!-- <div class="intro_pic">
+                <img src="./app/img/intro-image.jpg" class="intro_image" alt="Intro image ruynesse">
+            </div> -->
+            <div class="intro_info">
+                <div class="inner-wrapper">
+                    <h1 style="display: none;">Ruynesse</h1>
+                    <div class="logo duration4 distance2">
+                        <img src="./app/img/logo_home.svg" />
                     </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
-                        <a href="#" class="inner_picto">
-                            <i class="fa fa-users"></i>
-                        </a>
-                        <div class="wow slideInRight titre_expert delay01">Marketing</div>
-                        <p>Nous avons développé une « Offre complète » dans le but de répondre à vos attentes en privilégiant la notion de Conseil, de découverte que vous apporterez à vos clients. En développant des outils pour vous accompagner au mieux
-                            pendant votre activité.</p>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
-                        <a href="#" class="inner_picto">
-                            <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
-                        </a>
-                        <div class="wow slideInLeft titre_expert delay02">Technicité</div>
-                        <p>Notre service R&D, en veille permanente de nouveaux actifs, extraits ou senteurs vous développe des produits sur-mesure</p>
-                    </div>
-                    <div class="col-lg-6 col-md-6 col-sm-12 expert_inner">
-                        <a href="#" class="inner_picto">
-                            <i class="fa fa-trophy"></i>
-                        </a>
-                        <div class="wow slideInRight titre_expert delay03">Excellence</div>
-                        <p>Ruynèsse laboratoires vous garantit la qualité.<br /> Notre équipe constituons avec vous une équipe sur mesure pour accompagner les étapes importantes : formulation, production (fabrication, conditionnement), contrôle qualité,
-                            livraison.
-                        </p>
-                    </div>
+                    <p class="intro_description duration4 distance2 delay1">Laboratoire de notre cosmétiques, authentiquement suisse, 100% végétales hautement efficaces</p>
+                    <a href="#histoire" class="page-scroll btn_plus duration4 distance2 delay2">
+                        <i class="fa fa-angle-down fa-6" aria-hidden="true"></i></a>
                 </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-
-
-
-    <section id="service" class="content-section">
-        <div class="container bg_blanc p_service">
-            <div class="col-md-12">
-                <h1>SERVICES</h1>
-
-                <div class="row inner_content">
-                    <div class="col-lg-8 col-md-8 col-sm-12 inner_service_left">
-                        <img src="./app/img/visu_service.jpg" alt="">
-                    </div>
-
-                    <div class="col-lg-4 col-md-4 col-sm-12 inner_service_right">
-                        <div class="item_service">
-                            <h4 class="titre_item wow flipInX">FORMULATION</h4>
-                            <p>Notre équipe proposons une offre complète pour votre gamme cosmétique.les plus ambitieux et vous accompagnons depuis la formulation jusqu’à la livraison.</p>
-                        </div>
-
-                        <div class="item_service">
-                            <h4 class="titre_item wow flipInX delay01">FABRICATION</h4>
-                            <p>Tous nos contrôles microbiologiques sont réalisés en interne par du personnel spécifiquement formé. Ce même service Qualité intervient tous les jours dans les ateliers et l’entreprise.</p>
-                        </div>
-
-                        <div class="item_service">
-                            <h4 class="titre_item wow flipInX delay02">CONDITIONNEMENT</h4>
-                            <p>Nous disposons de plusieurs systèmes de remplissage pour un conditionnement. De même, à la demande du client, les produits peuvent être conditionnés dans des bidons, des seaux, des tonneaux ou des containers.</p>
-                        </div>
+        <section id="histoire" class="content-section section" id="section1">
+            <div class="p_histoire">
+                <div class="histoire_inner1">
+                    <h2>Qui sommes nous</h2>
+                </div>
+                <div class="histoire_inner2">
+                    <div class="rotate1 duration4 distance4">
+                        Ruynèsse laboratoires provient de l'expérience d'une équipe de pharmaciens, biochimistes et médecins qui ont développées et fourni des solutions et des formules de pointe pour les entreprises internationales les plus connues dans l'industrie cosmétique.
+                        <br />
+                        <br/> Les experts en thérapies combinées antivieillissement. Équipements d’administration transdermique.<br />
+                        <br /> Nous nous soucions de la beauté autant que de la qualité. Ruynèsse laboratoires est une biotechnologie nouvelle d'obtention de cellules souches végétales qui fait l'objet d'une demande de brevet et ouvre de toutes nouvelles
+                        perspectives dans le domaine de la cosmétique.<br /><br /> A partir de cette même technologie, d'autres substances actives 100% végétales hautement efficaces et éthiquement correctes ont été développées et le seront à l’avenir.
                     </div>
                 </div>
+                <div class="histoire_inner3">
+                </div>
             </div>
-        </div>
-    </section>
+        </section>
 
-    <section id="produit" class="content-section">
-        <div class="container bg_blanc p_produit">
-            <div class="col-md-12">
-                <h1>LES PRODUITS</h1>
-                <br clear="all"><br>
+        <section id="expert" class="content-section section" id="section2">
+            <div class="p_expert section_l_display">
+                <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">
+                    <h1 class="top duration4 distance2">EXPERTISE COSMÉTIQUE</h1>
+                    <br clear="all"><br>
 
-                <div class="row">
-                    <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
-                        <div class="pic_produit">
-                            <img src="./app/img/masque.jpg" />
+                    <div class="row">
+                        <div class="col-lg-3 col-md-3 col-sm-12">
+                            <div class="inner_intro rotate2 duration4">
+                                <h3>Ruynèsse laboratoires est votre partenaire idéal pour la formulation,<br />
+                        la conception, la fabrication et le conditionnement de votre propre marque de cosmétique.</h3>
+                            </div>
                         </div>
-                        <div class="wow fadeInDown titre_expert">Masque</div>
-                        <p></p>
+                        <div class="col-lg-9 col-md-9 col-sm-12 col-xs-12">
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 expert_inner rotate2 duration4 delay1">
+                                    <div class="inner_normal visu_normal">
+                                    </div>
+                                </div>
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 expert_inner_low">
+                                    <div class="row">
+                                        <div class="inner_s1 low duration4 delay1">
+                                            #La connaissance
+                                        </div>
+                                        <div class="inner_s2 low duration4 delay2">#L'Accompagnement
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 expert_inner rotate2 duration4 delay1">
+                                    <div class="titre_expert_out expert_color1">
+                                        <a href="#" class="inner_picto">
+                                            <i class="fa fa-flask"></i>
+                                        </a>
+                                        Science
+                                    </div>
+                                    <div class="titre_expert_over">
+                                        Les produits répondent les plus pointues de votre projet et des lois pour proposer des recettes de haute qualite alliant sensorialité et efficacité.
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="col-lg-4 col-md-4 col-sm-6 col-xs-6 expert_inner rotate2 duration4 delay2">
+                                    <div class="titre_expert_out expert_color2">
+                                        <a href="#" class="inner_picto">
+                                            <i class="fa fa-users"></i>
+                                        </a>Marketing
+                                    </div>
+                                    <div class="titre_expert_over">
+                                        Nous avons développé une Offre complète dans le but de répondre à vos attentes en privilégiant la notion de conseil, de découverte que vous apporterez à vos clients.
+                                    </div>
+
+                                </div>
+                                <div class="col-lg-8 col-md-8 col-sm-6 col-xs-6">
+                                    <div class="inner_long visu_long1 right duration4 delay3">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
-                        <div class="pic_produit">
-                            <img src="./app/img/serum.jpg" />
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-6 expert_inner rotate2 duration4 delay2">
+                            <div class="titre_expert_out expert_color2">
+                                <a href="#" class="inner_picto">
+                                    <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                </a>Technicité
+                            </div>
+                            <div class="titre_expert_over">
+                                Notre service R&D, en veille permanente de nouveaux actifs, extraits ou senteurs vous développe des produits sur-mesure
+                            </div>
+
                         </div>
-                        <div class="wow fadeInDown titre_expert delay01">Sérum</div>
-                        <p></p>
-                    </div>
-                    <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
-                        <div class="pic_produit">
-                            <img src="./app/img/soin.jpg" />
+                        <div class="col-lg-6 col-md-4 col-sm-12">
+                            <div class="inner_long visu_long2 left duration4 delay4">
+                            </div>
                         </div>
-                        <div class="wow fadeInDown titre_expert delay01">Soin</div>
-                        <p></p>
+                        <div class="col-lg-3 col-md-4 col-sm-12 expert_inner rotate2 duration4 delay5">
+                            <div class="titre_expert_out expert_color1">
+                                <a href="#" class="inner_picto">
+                                    <i class="fa fa-trophy"></i>
+                                </a>Excellence
+                            </div>
+                            <div class="titre_expert_over">
+                                Notre équipe constituons avec vous une équipe sur mesure pour accompagner les étapes importantes : formulation, production, contrôle qualité, livraison.
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
-        </div>
-    </section>
-
-
-    <!-- CONTACTS -->
-    <section id="contact">
-        <div class="container">
-            <h1>Contact</h1>
-            <!-- BLOC form -->
-            <div class="col-lg-8 col-md-8 col-sm-8">
-                <br clear="all">
-
-                <form class="form">
-
-                    <div class="form-group col-lg-6 col-md-6 col-sm-6">
-                        <label for="nom">Nom</label>
-                        <input type="text" class="form-control col-lg-6 col-md-6 col-sm-6" id="nom" placeholder="">
+            <div class="p_expert section_s_display">
+                <div class="col-md-12">
+                    <h1 class="top duration4 distance2">EXPERTISE COSMÉTIQUE</h1>
+                    <h3>Ruynèsse laboratoires est votre partenaire idéal pour la formulation,<br />
+                      la conception, la fabrication et le conditionnement de votre propre marque de cosmétique.</h3>
+                    <br clear="all"><br>
+                    <div class="row">
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 expert_inner rotate2 duration4">
+                            <div class="titre_expert_out expert_color1">
+                                <a href="#" class="inner_picto">
+                                    <i class="fa fa-flask"></i>
+                                </a>
+                                Science
+                            </div>
+                            <div class="titre_expert_over">
+                                Les produits répondent les plus pointues de votre projet et des lois pour proposer des recettes de haute qualite alliant sensorialité et efficacité.
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 expert_inner rotate2 duration4 delay1">
+                            <div class="titre_expert_out expert_color2">
+                                <a href="#" class="inner_picto">
+                                    <i class="fa fa-users"></i>
+                                </a>Marketing
+                            </div>
+                            <div class="titre_expert_over">
+                                Nous avons développé une Offre complète dans le but de répondre à vos attentes en privilégiant la notion de conseil, de découverte que vous apporterez à vos clients.
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 expert_inner rotate2 duration4 delay2">
+                            <div class="titre_expert_out expert_color2">
+                                <a href="#" class="inner_picto">
+                                    <i class="fa fa-cog fa-spin fa-3x fa-fw"></i>
+                                </a>Technicité
+                            </div>
+                            <div class="titre_expert_over">
+                                Notre service R&D, en veille permanente de nouveaux actifs, extraits ou senteurs vous développe des produits sur-mesure
+                            </div>
+                        </div>
+                        <div class="col-lg-3 col-md-6 col-sm-6 col-xs-6 expert_inner rotate2 duration4 delay3">
+                            <div class="titre_expert_out expert_color1">
+                                <a href="#" class="inner_picto">
+                                    <i class="fa fa-trophy"></i>
+                                </a>Excellence
+                            </div>
+                            <div class="titre_expert_over">
+                                Notre équipe constituons avec vous une équipe sur mesure pour accompagner les étapes importantes : formulation, production, contrôle qualité, livraison.
+                            </div>
+                        </div>
                     </div>
-                    <div class="form-group col-lg-6 col-md-6 col-sm-6">
-                        <label for="prenom">Prénom</label>
-                        <input type="text" class="form-control col-lg-6 col-md-6 col-sm-6" id="prenom" placeholder="">
+                </div>
+            </div>
+        </section>
+
+        <section id="service" class="content-section section" id="section3">
+            <div class="container p_service">
+                <div class="col-md-12">
+                    <div class="inner_content">
+                        <div class="col-lg-6 col-md-6 col-sm-12 inner_service_right">
+                            <h1 class="duration4 distance2">SERVICES</h1>
+                            <div class="item_service right duration4 delay1">
+                                <h4 class="titre_item right duration4">FORMULATION</h4>
+                                <p>Notre équipe proposons une offre complète pour votre gamme cosmétique.les plus ambitieux et vous accompagnons depuis la formulation jusqu’à la livraison.</p>
+                            </div>
+
+                            <div class="item_service right duration4 delay2">
+                                <h4 class="titre_item">FABRICATION</h4>
+                                <p>Tous nos contrôles microbiologiques sont réalisés en interne par du personnel spécifiquement formé. Ce même service Qualité intervient tous les jours dans les ateliers et l’entreprise.</p>
+                            </div>
+
+                            <div class="item_service right duration4 delay3">
+                                <h4 class="titre_item">CONDITIONNEMENT</h4>
+                                <p>Nous disposons de plusieurs systèmes de remplissage pour un conditionnement. De même, à la demande du client, les produits peuvent être conditionnés dans des bidons, des seaux, des tonneaux ou des containers.</p>
+                            </div>
+                        </div>
+                        <div class="col-lg-6 col-md-6 col-sm-12 inner_service_left">
+                            <div class="row">
+                                <div class="square bloc1 col-lg-6 col-md-6 col-sm-12">
+                                    <i class="fa fa-comments" aria-hidden="true"></i>
+                                </div>
+                                <div class="square bloc2 col-lg-6 col-md-6 col-sm-12">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="square bloc3 col-lg-6 col-md-6 col-sm-12">
+                                </div>
+                                <div class="square bloc4 col-lg-6 col-md-6 col-sm-12">
+                                    <i class="fa fa-flask" aria-hidden="true"></i>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="square bloc5 col-lg-6 col-md-6 col-sm-12">
+                                    <i class="fa fa-suitcase" aria-hidden="true"></i>
+                                </div>
+                                <div class="square bloc6 col-lg-6 col-md-6 col-sm-12">
+                                </div>
+                            </div>
+                        </div>
                     </div>
+                </div>
+            </div>
+        </section>
 
-                    <br><br clear="all">
+        <section id="produit" class="content-section section" id="section4">
+            <div class="bg_produit">
+            </div>
+            <div class="container p_produit">
+                <div class="col-md-12">
+                    <h1 data-scroll-reveal="enter left and move 50px over 1.33s">LES PRODUITS</h1>
+                    <br clear="all"><br>
 
-                    <div class="form-group col-lg-6 col-md-6 col-sm-6">
-                        <label for="tel">Tél.</label>
-                        <input type="text" class="form-control" id="tel" placeholder="">
+                    <div class="row">
+                        <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
+                            <div class="pic_produit">
+                                <img src="./app/img/masque.jpg" />
+                            </div>
+                            <div class="wow fadeInDown titre_expert">Masque</div>
+                            <p></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
+                            <div class="pic_produit">
+                                <img src="./app/img/serum.jpg" />
+                            </div>
+                            <div class="wow fadeInDown titre_expert delay01">Sérum</div>
+                            <p></p>
+                        </div>
+                        <div class="col-lg-4 col-md-4 col-sm-12 produit_inner">
+                            <div class="pic_produit">
+                                <img src="./app/img/soin.jpg" />
+                            </div>
+                            <div class="wow fadeInDown titre_expert delay01">Soin</div>
+                            <p></p>
+                        </div>
                     </div>
-
-                    <div class="form-group col-lg-6 col-md-6 col-sm-6">
-                        <label for="email">E-mail</label>
-                        <input type="text" class="form-control" id="email" placeholder="">
-                    </div>
-
-
-                    <br><br clear="all">
-
-                    <div class="form-group message col-md-12">
-                        <label for="message">Votre message</label>
-                        <textarea class="form-control" id="message" rows="3"></textarea>
-                    </div>
-
-                    <br><br clear="all">
-
-                    <div class="text-center">
-                        <button type="submit" class="btn btn-default">Envoyer</button>
-                    </div>
-                </form>
+                </div>
             </div>
 
-            <!-- BLOC INFOS CONTACT -->
-            <div class="col-lg-4 col-md-4 col-sm-4 bloc_infos">
-                <p class="infos_contact"><strong>Ruynèsse laboratoires SUISSE</strong>
-                    <br /> Birkenstrasse 45, 6343 Rotkreuz</p>
-                <a href="mailto:contact@ruynesse.com">contact@ruynesse.com</a>
-            </div>
-        </div>
-    </section>
+        </section>
 
-    <footer id="footer">
-        <div class="container footer_p">
-            <ul>
-                <li><a href="#">Mentions légales</a></li>
-                <li>© Ruynèsse - 2017</li>
-            </ul>
-        </div>
-    </footer>
+        <!-- CONTACTS -->
+        <section id="contact" class="content-section section" id="section5">
+            <div class="container">
+                <h1>Contact</h1>
+                <!-- BLOC form -->
+                <div class="col-lg-8 col-md-8 col-sm-8">
+                    <br clear="all">
+
+                    <form class="form">
+
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                            <label for="nom">Nom</label>
+                            <input type="text" class="form-control col-lg-6 col-md-6 col-sm-6" id="nom" placeholder="">
+                        </div>
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                            <label for="prenom">Prénom</label>
+                            <input type="text" class="form-control col-lg-6 col-md-6 col-sm-6" id="prenom" placeholder="">
+                        </div>
+
+                        <br><br clear="all">
+
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                            <label for="tel">Tél.</label>
+                            <input type="text" class="form-control" id="tel" placeholder="">
+                        </div>
+
+                        <div class="form-group col-lg-6 col-md-6 col-sm-6">
+                            <label for="email">E-mail</label>
+                            <input type="text" class="form-control" id="email" placeholder="">
+                        </div>
+
+
+                        <br><br clear="all">
+
+                        <div class="form-group message col-md-12">
+                            <label for="message">Votre message</label>
+                            <textarea class="form-control" id="message" rows="3"></textarea>
+                        </div>
+
+                        <br><br clear="all">
+
+                        <div class="text-center">
+                            <button type="submit" class="btn btn-white">Envoyer</button>
+                        </div>
+                    </form>
+                </div>
+
+                <!-- BLOC INFOS CONTACT -->
+                <div class="col-lg-4 col-md-4 col-sm-4 bloc_infos">
+                    <p class="infos_contact"><strong>Ruynèsse laboratoires SUISSE</strong>
+                        <br /> Birkenstrasse 45, 6343 Rotkreuz</p>
+                    <a href="mailto:contact@ruynesse.com">contact@ruynesse.com</a>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div data-scroll-reveal="enter from the top over 0.8s" class="container footer_p">
+                <ul>
+                    <li><a href="#">Mentions légales</a></li>
+                    <li>© Ruynèsse - 2017</li>
+                </ul>
+            </div>
+        </footer>
+
+    </div>
 
     <!--<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>-->
     <script src="./app/js/jquery.min.js"></script>
 
     <!--<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>-->
     <script src="./app/js/bootstrap.min.js"></script>
+
 
     <!-- pour retour haut de page -->
     <script src="./app/js/returnOnTop.js"></script>
@@ -334,6 +447,77 @@ le conditionnement de votre propre marque de cosmétique.</h3>
     <script src="./app/js/jquery.easing.min.js"></script>
     <script src="./app/js/scrolling-nav.js"></script>
 
+    <!-- POUR CHARGER LES EFFETS CSS CHAQUE FOIS -->
+    <script src='./app/js/scrollreveal.js'></script>
+    <script>
+        window.sr = ScrollReveal({
+            reset: true
+        });
+        sr.reveal('.delay1', {
+            delay: 300
+        })
+        sr.reveal('.delay2', {
+            delay: 600
+        })
+        sr.reveal('.delay3', {
+            delay: 900
+        })
+        sr.reveal('.delay4', {
+            delay: 1200
+        })
+        sr.reveal('.delay5', {
+            delay: 1500
+        })
+        sr.reveal('.distance1', {
+            distance: '20px'
+        })
+        sr.reveal('.distance2', {
+            distance: '40px'
+        })
+        sr.reveal('.distance3', {
+            distance: '60px'
+        })
+        sr.reveal('.distance4', {
+            distance: '80px'
+        })
+        sr.reveal('.duration1', {
+            duration: 200
+        })
+        sr.reveal('.duration2', {
+            duration: 400
+        })
+        sr.reveal('.duration3', {
+            duration: 600
+        })
+        sr.reveal('.duration4', {
+            duration: 800
+        })
+        sr.reveal('.left', {
+            origin: 'left'
+        })
+        sr.reveal('.right', {
+            origin: 'right'
+        })
+        sr.reveal('.top', {
+            origin: 'top'
+        })
+        sr.reveal('.rotate1', {
+            rotate: {
+                x: 90,
+                y: 0,
+                z: 0
+            }
+        })
+        sr.reveal('.rotate2', {
+            rotate: {
+                x: 0,
+                y: 90,
+                z: 0
+            }
+        });
+    </script>
+    <script type="text/javascript" src="./app/js/test/skrollr.min.js"></script>
+    <script type="text/javascript" src="./app/js/test/scropts.min.js"></script>
 </body>
 
 </html>
